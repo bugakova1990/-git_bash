@@ -1,0 +1,66 @@
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+mkdir test3
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+echo -e "row1nrow2nrow3nrow4" > test3/4
+echo -e "row1nrow2nrow3nrow4" > test3/5
+echo -e "row1nrow2nrow3nrow4" > test3/6
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+echo -e "row1\nrow2\nrow3\nrow4" > test3/4
+echo -e "row1\nrow2\nrow3\nrow4" > test3/5
+echo -e "row1\nrow2\nrow3\nrow4" > test3/6
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+grep "row2" test3/5
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+grep -c "row" test3/6
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+grep "row" test3/*
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+grep -c "row" test3/6
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+find test3 -name "5"
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+find test3 -name "5" -exec rm {} ;
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+find test3 -name "5" -exec rm {} find test3 -name "5" -exec rm {} rm 5
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+rm 5
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+echo "test" > test3/4
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+sed -i 's/test/fail/g' test3/4
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+echo "test" >> test3/4
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+ps aux
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+kill 666
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+kill 499
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+ping artsiomrusau.com
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+ping -c 5 artsiomrusau.com
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+curl -X GET 
+
+ekate@gonza MINGW64 ~/OneDrive/Рабочий стол (master)
+curl -X POST "https://petstore.swagger.io/v2/user" -H "Content-Type: application/json" -d '{"id": 0, "username": "newuser", "firstName": "New", "lastName": "User", "email": "newuser@example.com", "password": "password", "phone": "1234567890", "userStatus": 0}'
